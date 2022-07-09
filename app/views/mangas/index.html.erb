@@ -1,0 +1,5 @@
+<% @mangas.each do |manga| %>
+  <h1>Title: <%= manga.name %></h1>
+  <p>Completed? <%= manga.completed %></p>
+  <p># of chapters <%= manga.number_of_chapters %></p>
+<%end%>
