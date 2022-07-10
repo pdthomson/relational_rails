@@ -245,6 +245,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -262,12 +263,43 @@
           1,
           1,
           1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
       "/Users/parkerthomson/2mod/solo_project/authors_and_manga/app/models/application_record.rb": {
         "lines": [
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/parkerthomson/2mod/solo_project/authors_and_manga/app/controllers/authors_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/parkerthomson/2mod/solo_project/authors_and_manga/app/controllers/application_controller.rb": {
+        "lines": [
           1,
           null
         ]
@@ -283,28 +315,8 @@
           1,
           null
         ]
-      },
-      "/Users/parkerthomson/2mod/solo_project/authors_and_manga/app/controllers/mangas_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/parkerthomson/2mod/solo_project/authors_and_manga/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1657333909
+    "timestamp": 1657487376
   }
 }
