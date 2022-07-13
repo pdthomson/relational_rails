@@ -1,3 +1,16 @@
+<%= link_to "Create Manga", "/authors/#{@author.id}/mangas/new" %>
+<%= link_to "Sort Alphabetically", "/authors/#{@author.id}/mangas?sort=alpha"%>
+<ul>
+  <a href="/mangas">Mangas</a>
+  <a href="/authors">Authors</a>
+</ul>
+
+<%= form_with url: "/authors/#{@author.id}/mangas", method: :get, local:true do |form|%>
+<%= form.label :number_of_chapters, "Only return records with more than" %>
+<%= form.text_field :number_of_chapters %>
+<%= form.submit 'Submit' %>
+<% end %>
+
 <% @mangas.each do |manga| %>
   <p><%=  manga.name %></p>
   <p><%=  manga.completed %></p>

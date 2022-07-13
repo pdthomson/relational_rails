@@ -1,0 +1,9 @@
+<%= form_with url: "/mangas/#{@manga.id}", method: :patch, local:true do |form| %>
+  <p><%= form.label :name%>
+    <%= form.text_field :name %></p>
+  <p><%= form.label "Number of Chapters:"%>
+    <%= form.text_field :number_of_chapters %></p>
+  <p><%= form.label "Completed?"%>
+    <%= form.select :completed, [true, false] %></p>
+  <%= form.submit "Update Manga" %>
+<%end%>

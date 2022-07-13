@@ -1,5 +1,12 @@
-<% @mangas.each do |manga| %>
-  <h1>Title: <%= manga.name %></h1>
-  <p>Completed? <%= manga.completed %></p>
-  <p># of chapters <%= manga.number_of_chapters %></p>
+<ul>
+  <a href="/mangas">Mangas</a>
+  <a href="/authors">Authors</a>
+</ul>
+<% @mangas.true_value.each do |manga| %>
+  <p id="manga-<%= manga.id %>">Title: <%= manga.name %>
+  Completed? <%= manga.completed %>
+  # of chapters <%= manga.number_of_chapters %>
+  <%= link_to "edit", "/mangas/#{manga.id}/edit" %>
+  <%= link_to "delete", "/mangas/#{manga.id}", method: :delete %>
+</p>
 <%end%>

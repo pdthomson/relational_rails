@@ -10,7 +10,6 @@ class Author < ApplicationRecord
   end
 
   def manga_count
-    # require "pry"; binding.pry
     mangas.count
   end
 end

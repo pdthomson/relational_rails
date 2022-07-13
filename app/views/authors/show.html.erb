@@ -1,3 +1,8 @@
-<h1><%= @author.name %></h1>
+<%= link_to "#{@author.name}'s Mangas", "/authors/#{@author.id}/mangas" %>
+<%= link_to "Update Author", "/authors/#{@author.id}/edit" %>
+<%= link_to "Delete Author", "/authors/#{@author.id}", method: :delete %>
+
+<h1><%= @author.name %> </h1>
+<h3>Number of Mangas: <%= @author.manga_count %></h3>
 <h3><%= @author.award_winner %></h3>
 <h3><%= @author.year_published %></h3>

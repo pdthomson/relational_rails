@@ -1,0 +1,9 @@
+<%= form_with url: "/authors", method: :post, local:true do |form| %>
+  <p><%= form.label :name%>
+    <%= form.text_field :name %></p>
+  <p><%= form.label "Year Published:"%>
+    <%= form.text_field :year_published %></p>
+  <p><%= form.label "Award winner?"%>
+    <%= form.select :award_winner, [true, false] %></p>
+  <%= form.submit "Create Author" %>
+<%end%>
